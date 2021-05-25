@@ -12,5 +12,5 @@ $("#greybg").click(function() {
 })
 
 $(document).ready(function(){
-	$("div#accordion").children().eq(1).hide();
+	$("div#accordion").children().eq(1).hide().css({height:0})
 })
