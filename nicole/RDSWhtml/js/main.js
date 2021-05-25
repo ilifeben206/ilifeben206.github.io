@@ -10,3 +10,7 @@ $("#greybg").click(function() {
     $(".portfolio-filter.isotope-filter.pull-center").toggleClass("on");
     $('.hamburger').toggleClass('is-active');
 })
+
+$(document).ready(function(){
+	$("div#accordion").children().eq(1).hide();
+})
