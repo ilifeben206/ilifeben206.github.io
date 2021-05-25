@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032) -->
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> 環保專案資料倉儲系統</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="環保專案資料倉儲系統">
+    <meta name="keywords" content="環保專案資料倉儲系統">
+    <meta property="og:locale" content="zh_TW" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="環保專案資料倉儲系統" />
+    <meta property="og:description" content="環保專案資料倉儲系統" />
+    <meta property="og:site_name" content="環保專案資料倉儲系統" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge chrome=1">
+
+    <link rel="shortcut icon" href="img/favicon.png">
+    <meta name="geo.region" content="tw">
+    <meta name="robots" content="all">
+    <meta name="rating" content="general">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/main-style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <!-- Js -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <!-- 彈跳視窗 -->
+
+    <script>
+        $(function() {
+            $("#accordion").accordion();
+        });
+        jQuery(document).ready(function($) {
+            var offset = 100,
+                offset_opacity = 1200,
+                scroll_top_duration = 700,
+                $back_to_top = $('.cd-top');
+            $(window).scroll(function() {
+                ($(this).scrollTop() > offset) ? $back_to_top.addClass('cd-is-visible'): $back_to_top.removeClass('cd-is-visible cd-fade-out');
+                if ($(this).scrollTop() > offset_opacity) {
+                    $back_to_top.addClass('cd-fade-out');
+                }
+            });
+            $back_to_top.on('click',
+                function(event) {
+                    event.preventDefault();
+                    $('body,html').animate({
+                            scrollTop: 0,
+                        },
+                        scroll_top_duration);
+                });
+        });
+    </script>
+</head>
+<noscript>您的瀏覽器不支援JavaScript，請更換支援 JavaScript 的瀏覽器。</noscript>
+
+<body>
+    <div id="greybg"></div>
+    <a href="#accesskey_C" class="sr-only sr-only-focusable" title="跳到主要內容區塊" tabindex="1" id="linkGotoContent">跳到主要內容區塊</a>
+    <div class="right_icons top_R">
+        <img class="cd-top" src="img/top.svg">
+    </div>
+
+
+    <header>
+        <div class="width1200">
+            <h1> <a class="logo" href="index.html" title="行政院環境保護署">行政院環境保護署</a></h1>
+            <div id="mobile_menu_labIcon">
+                <div class="hamburger" id="hamburger-1">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+            </div>
+
+
+            <div class=" portfolio-filter isotope-filter pull-center">
+
+                <div class="social">
+                    <a href="#U" id="U" name="U" accesskey="U" class="accesskey u" title="上方選單區導盲磚">:::</a></li>
+
+                    <a class="line2" title="Line" href="https://line.me/R/ti/p/KjOox0U09B">line </a>
+
+                    <a class="ig" href="https://www.instagram.com/epa.tw/" title="Instagram">ig</a>
+
+                    <a class="fb" href="https://www.epa.gov.tw/Page/5BE8739FFBB880CB" title="Facebook">fb</a>
+
+                    <a class="mail" href="https://epamail.epa.gov.tw/front/mailboxhome" title="mail">mail</a>
+
+                    <a class="en" href="#" title="EN(另開視窗)">EN</a>
+                </div>
+
+
+                <nav class="width1200 menu">
+
+                    <ul class="submenu">
+                        <li><a href="#" title="回首頁">回首頁</a></li>
+                        <li><a href="#" title="關於我們">關於我們</a></li>
+                        <li><a href="#" title="網站導覽">網站導覽</a></li>
+                        <li>
+                            <div class="search_wrap">
+                                <div class="search_border">
+                                    <input name="ctl00$ctl12$uc_NavMain1$top_search_input_CN" type="text" id="top_search_input_CN" accesskey="S" class="text KeyWord" placeholder="站內查詢，請輸入關鍵字" title="站內查詢，請輸入關鍵字">
+                                    <input type="submit" name="SearchBtn" value="搜尋" id="SearchBtn" class="btn SearchBtn" title="搜尋">
+                                </div>
+                                <span class="hot_words">
+                                <b>熱門搜尋：</b>
+                                <a href="/Search/5E5E441077B00C5D?q=環境即時通APP" class="hot_words">環境即時通APP</a>、
+                                <a href="/Search/5E5E441077B00C5D?q=細懸浮微粒（PM2.5）" class="hot_words">細懸浮微粒（PM2.5）</a>
+                            </span>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+
+    </header>
+    <section class="banner width1200">
+        <h2>環保專案資料倉儲系統</h2>
+        <p>Environmental Protection Project Data Warehousing</p>
+    </section>
+    <section class="contain">
+
+        <a title="內容區" name="content" href="#content" accesskey="C" class="right_sitemap">:::</a>
+        <section class="flex space-between">
+
+            <div class="web">
+                <h3><span>網站功能</span>
+                    <hr>
+                </h3>
+                <div class="widthlink">
+                    <a class="login" title="系統登入" href="#"><span></span><p>系統登入</p></a>
+                    <a class="system" title="作業流程說明" href="#"><span></span><p>作業流程說明</p></a>
+                    <a class="project" title="專案成果報告查詢" href="#"><span></span><p>專案成果<br/>
+                        報告查詢</p></a>
+                </div>
+
+            </div>
+            <div class="customer">
+                <h3><span>客服專區</span>
+                    <hr>
+                </h3>
+                <div class="widthlink2">
+                    <a class="common_problem" title="系統登入" href="#"><span></span><p>系統登入</p></a>
+                    <a class="book" title="操作手冊" href="#"><span></span><p>操作手冊</p></a>
+                    <a class="feedback" title="意見回饋" href="#"><span></span><p>意見回饋</p></a>
+                </div>
+
+            </div>
+        </section>
+        <div class="news">
+            <h3><span>最新消息</span>
+                <hr>
+                <a class="rss" href="#"></a>
+            </h3>
+            <div id="accordion">
+                <h4>預告網站改版</h4>
+                <div style="display: none;">
+                    <div class="new-list" style="clear:both">
+                        <ul>
+
+                            <li>
+                                <a href="../03bulletin/bulletin02_con.aspx?bull_id=1778" title="從每季地價動態差異性，了解鹿港地政轄區不動產趨勢">
+                                    <em>從每季地價動態差異性，了解鹿港地政轄區不動產趨勢</em>
+                                    <span>110/05/20</span> </a>
+                            </li>
+
+                            <li>
+                                <a href="../03bulletin/bulletin02_con.aspx?bull_id=1764" title="鹿港地政歡送陳錦德課員榮調彰化縣政府地政處">
+                                    <em>鹿港地政歡送陳錦德課員榮調彰化縣政府地政處</em>
+                                    <span>110/05/14</span> </a>
+                            </li>
+
+                            <li>
+                                <a href="../03bulletin/bulletin02_con.aspx?bull_id=1665" title="鹿港地政結合社區共餐活動，辦理地政業務宣導">
+                                    <em>鹿港地政結合社區共餐活動，辦理地政業務宣導</em>
+                                    <span>110/05/07</span> </a>
+                            </li>
+
+                            <li>
+                                <a href="../03bulletin/bulletin02_con.aspx?bull_id=1664" title="110年法務部調查局調查人員特考（三等考試），預計於5月4日至13日報名，歡迎有">
+                                    <em>110年法務部調查局調查人員特考（三等考試），預計於5月4日至13日報名，歡迎有...</em>
+                                    <span>110/05/07</span> </a>
+                            </li>
+
+                            <li>
+                                <a href="../03bulletin/bulletin02_con.aspx?bull_id=1663" title="法務部調查局-反偽劣藥、反黑心食品宣導">
+                                    <em>法務部調查局-反偽劣藥、反黑心食品宣導</em>
+                                    <span>110/05/07</span> </a>
+                            </li>
+
+                            <li>
+                                <a href="../03bulletin/bulletin02_con.aspx?bull_id=1656" title="鹿港地政為民服務滿意度問卷調查開跑了">
+                                    <em>鹿港地政為民服務滿意度問卷調查開跑了</em>
+                                    <span>110/04/30</span> </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <h4>更新環評操作影片</h4>
+                <div>
+                    <div class="new-list" style="clear:both">
+                        <ul>
+
+                            <li>
+                                <a href="../03bulletin/bulletin02_con.aspx?bull_id=1778" title="從每季地價動態差異性，了解鹿港地政轄區不動產趨勢">
+                                    <em>從每季地價動態差異性，了解鹿港地政轄區不動產趨勢</em>
+                                    <span>110/05/20</span> </a>
+                            </li>
+
+                            <li>
+                                <a href="../03bulletin/bulletin02_con.aspx?bull_id=1764" title="鹿港地政歡送陳錦德課員榮調彰化縣政府地政處">
+                                    <em>鹿港地政歡送陳錦德課員榮調彰化縣政府地政處</em>
+                                    <span>110/05/14</span> </a>
+                            </li>
+
+                            <li>
+                                <a href="../03bulletin/bulletin02_con.aspx?bull_id=1665" title="鹿港地政結合社區共餐活動，辦理地政業務宣導">
+                                    <em>鹿港地政結合社區共餐活動，辦理地政業務宣導</em>
+                                    <span>110/05/07</span> </a>
+                            </li>
+
+                            <li>
+                                <a href="../03bulletin/bulletin02_con.aspx?bull_id=1664" title="110年法務部調查局調查人員特考（三等考試），預計於5月4日至13日報名，歡迎有">
+                                    <em>110年法務部調查局調查人員特考（三等考試），預計於5月4日至13日報名，歡迎有...</em>
+                                    <span>110/05/07</span> </a>
+                            </li>
+
+                            <li>
+                                <a href="../03bulletin/bulletin02_con.aspx?bull_id=1663" title="法務部調查局-反偽劣藥、反黑心食品宣導">
+                                    <em>法務部調查局-反偽劣藥、反黑心食品宣導</em>
+                                    <span>110/05/07</span> </a>
+                            </li>
+
+                            <li>
+                                <a href="../03bulletin/bulletin02_con.aspx?bull_id=1656" title="鹿港地政為民服務滿意度問卷調查開跑了">
+                                    <em>鹿港地政為民服務滿意度問卷調查開跑了</em>
+                                    <span>110/04/30</span> </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <h4>網站停機公告</h4>
+                <div>
+                    <div class="new-list" style="clear:both">
+                        <ul>
+
+                            <li>
+                                <a href="../03bulletin/bulletin02_con.aspx?bull_id=1778" title="從每季地價動態差異性，了解鹿港地政轄區不動產趨勢">
+                                    <em>從每季地價動態差異性，了解鹿港地政轄區不動產趨勢</em>
+                                    <span>110/05/20</span> </a>
+                            </li>
+
+                            <li>
+                                <a href="../03bulletin/bulletin02_con.aspx?bull_id=1764" title="鹿港地政歡送陳錦德課員榮調彰化縣政府地政處">
+                                    <em>鹿港地政歡送陳錦德課員榮調彰化縣政府地政處</em>
+                                    <span>110/05/14</span> </a>
+                            </li>
+
+                            <li>
+                                <a href="../03bulletin/bulletin02_con.aspx?bull_id=1665" title="鹿港地政結合社區共餐活動，辦理地政業務宣導">
+                                    <em>鹿港地政結合社區共餐活動，辦理地政業務宣導</em>
+                                    <span>110/05/07</span> </a>
+                            </li>
+
+                            <li>
+                                <a href="../03bulletin/bulletin02_con.aspx?bull_id=1664" title="110年法務部調查局調查人員特考（三等考試），預計於5月4日至13日報名，歡迎有">
+                                    <em>110年法務部調查局調查人員特考（三等考試），預計於5月4日至13日報名，歡迎有...</em>
+                                    <span>110/05/07</span> </a>
+                            </li>
+
+                            <li>
+                                <a href="../03bulletin/bulletin02_con.aspx?bull_id=1663" title="法務部調查局-反偽劣藥、反黑心食品宣導">
+                                    <em>法務部調查局-反偽劣藥、反黑心食品宣導</em>
+                                    <span>110/05/07</span> </a>
+                            </li>
+
+                            <li>
+                                <a href="../03bulletin/bulletin02_con.aspx?bull_id=1656" title="鹿港地政為民服務滿意度問卷調查開跑了">
+                                    <em>鹿港地政為民服務滿意度問卷調查開跑了</em>
+                                    <span>110/04/30</span> </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <a class="more" href="#" title="點此看更多訊息公告"> 點此看更多訊息公告 </a>
+        </div>
+        <div class="service">
+            <p>客服電話：02-2388-0518 #189</p>
+            <p>客服信箱：erirdsw@gmail.com</p>
+        </div>
+    </section>
+    <footer>
+        <div class="link ">
+            <ul class="width1200">
+                <li><a class="pdf" href="#" title="資訊安全政策(PDF檔)"> 資訊安全政策(PDF檔) </a></li>
+                <li><a class="pdf" href="#" title="資訊安全規範(PDF檔)">  資訊安全規範(PDF檔)</a></li>
+                <li><a href="#" title="無法開啟檔案嗎？"> 無法開啟檔案嗎？ </a></li>
+                <li><a href="#" title="隱私權保護政策">隱私權保護政策 </a></li>
+                <li><a href="#" title="網站安全政策">網站安全政策 </a></li>
+                <li><a href="#" title="網站資料開放宣告"> 網站資料開放宣告 </a></li>
+            </ul>
+        </div>
+        <div class="width1200">
+            <div class="information_border">
+                <div class="information">
+                    <img src="img/white_logo.svg" alt="行政院環境保護署">
+                    <a class="aa" href="https://accessibility.ncc.gov.tw/Applications/Detail?category=20210511135455" target="_blank" title="無障礙網站(另開新視窗）"><img src="img/aa.svg" alt="通過AA優先等級無障礙網頁檢測（另開新視窗）"></a>
+                    <div class="address">10042臺北市中正區中華路一段83號
+                        <a class="map" href="https://goo.gl/maps/dnzg3ja4zTWHUS5HA" target="_blank"></a>　<a class="director_mailbox" href="#" target="_blank" title="首長信箱">首長信箱</a> </div>
+                    <div class="phone">總機：886-2-23117722</div>
+                </div>
+                <div class="information">
+                    <p>請使用Chrome,IE10+以上版本瀏覽器</p>
+                    <p>請使用1440*900px以上(含)螢幕解析度與IE 10+版本以上之常見瀏覽器以獲得最佳網頁瀏覽環境</p>
+                    <p>資料更新日期：2021-04-29</p>
+                    <p> 客服電話：02-2388-0518 #189</p>
+                    <p> 客服信箱：erirdsw@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src='js/main.js'></script>
+    <script>
+        $(".fancybox").fancybox();
+    </script>
+</body>
+
+</html>
