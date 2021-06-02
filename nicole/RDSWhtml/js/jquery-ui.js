@@ -4496,7 +4496,7 @@
             }
 
             if (toFocus) {
-                $(event.target).attr("tabIndex", -1);
+                $(event.target).attr("tabIndex", 1);
                 $(toFocus).attr("tabIndex", 0);
                 $(toFocus).trigger("focus");
                 event.preventDefault();
@@ -4596,7 +4596,7 @@
                 .attr({
                     "aria-selected": "false",
                     "aria-expanded": "false",
-                    tabIndex: -1
+                    tabIndex: 1
                 })
                 .next()
                 .attr({
@@ -4788,14 +4788,14 @@
             // if we're collapsing, then keep the collapsing header in the tab order
             if (toShow.length && toHide.length) {
                 toHide.prev().attr({
-                    "tabIndex": -1,
+                    "tabIndex": 1,
                     "aria-expanded": "false"
                 });
             } else if (toShow.length) {
                 this.headers.filter(function() {
                         return parseInt($(this).attr("tabIndex"), 10) === 0;
                     })
-                    .attr("tabIndex", -1);
+                    .attr("tabIndex", 1);
             }
 
             toShow
@@ -12307,7 +12307,7 @@
                 .attr({
 
                     // Setting tabIndex makes the div focusable
-                    tabIndex: -1,
+                    tabIndex: 1,
                     role: "dialog"
                 })
                 .appendTo(this._appendTo());
