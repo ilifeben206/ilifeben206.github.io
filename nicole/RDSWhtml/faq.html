@@ -1151,7 +1151,7 @@
     <script src='js/main.js'></script>
 	
 	<script>
-	  $( ".accordion" ).append("<div class='card'><div class='card-header'></div><div> </div></div>");
+	  $( ".accordion" ).append("<div class='card last_card'><div class='card-header'></div><div> </div></div>");
 	  $( function() {
 		$( ".accordion" ).accordion({
 		  header: ".card-header",
@@ -1159,7 +1159,8 @@
 		  active: -1
 		});
 	  } );
-	  alert('heightStyle: "content"');
+	  $(".last_card").hide();
+	  alert('last_card');
 	</script>
 
 
