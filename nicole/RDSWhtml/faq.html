@@ -193,7 +193,7 @@
                     <!-- 主要內容 -->
                     <div>
                         <!--使用說明-->
-                        <div class="code-downbox" id="tabs-1">
+                        <div class="code-downbox accordion" id="tabs-1">
                             <div class="card">
                                 <div class="card-header" id="heading1_1">
                                     <div class="text_title">
@@ -341,7 +341,7 @@
                             </div>
                         </div>
                         <!--補助案件-->
-                        <div class="code-downbox" id="tabs-3" style="display: none;">
+                        <div class="code-downbox accordion" id="tabs-3" style="display: none;">
                             <div class="card">
                                 <div class="card-header" id="heading9_1">
                                     <div class="mb-0 text_left header_text" data-toggle="collapse" data-target="#collapse9_1" aria-expanded="true" aria-controls="collapse9_1">
@@ -399,7 +399,7 @@
                         </div>
 
                         <!--環評案件-->
-                        <div class="code-downbox" id="tabs-4" style="display: none;">
+                        <div class="code-downbox accordion" id="tabs-4" style="display: none;">
                             <div class="card">
                                 <div class="card-header" id="heading7_5">
                                     <div class="mb-0 text_left header_text" data-toggle="collapse" data-target="#collapse7_5" aria-expanded="true" aria-controls="collapse7_5">
@@ -536,7 +536,7 @@
                             </div>
                         </div>
                         <!--承辦人操作-->
-                        <div class="code-downbox" id="tabs-5" style="display: none;">
+                        <div class="code-downbox accordion" id="tabs-5" style="display: none;">
                             <div class="card">
                                 <div class="card-header" id="heading8_1">
                                     <div class="mb-0 text_left header_text" data-toggle="collapse" data-target="#collapse8_1" aria-expanded="true" aria-controls="collapse8_1">
@@ -616,7 +616,7 @@
                             </div>
                         </div>
                         <!--帳號申請及登入-->
-                        <div class="code-downbox" id="tabs-6" style="display: none;">
+                        <div class="code-downbox accordion" id="tabs-6" style="display: none;">
                             <div class="card">
                                 <div class="card-header" id="heading2_1">
 
@@ -663,7 +663,7 @@
                             </div>
                         </div>
                         <!--範本相關問題-->
-                        <div class="code-downbox" id="tabs-7" style="display: none;">
+                        <div class="code-downbox accordion" id="tabs-7" style="display: none;">
                             <div class="card">
                                 <div class="card-header" id="heading4_1">
                                     <div class="mb-0 text_left header_text" data-toggle="collapse" data-target="#collapse4_1" aria-expanded="true" aria-controls="collapse4_1">
@@ -880,7 +880,7 @@
 
 
                         <!--數據上傳問題-->
-                        <div class="code-downbox" id="tabs-8" style="display: none;">
+                        <div class="code-downbox accordion" id="tabs-8" style="display: none;">
                             <div class="card">
                                 <div class="card-header" id="heading5_1">
                                     <div class="mb-0 text_left header_text" data-toggle="collapse" data-target="#collapse5_1" aria-expanded="true" aria-controls="collapse5_1">
@@ -1077,7 +1077,7 @@
                             </div>
                         </div>
                         <!--支援檔案格式-->
-                        <div class="code-downbox" id="tabs-9" style="display: none;">
+                        <div class="code-downbox accordion" id="tabs-9" style="display: none;">
                             <div class="card">
                                 <div class="card-header" id="heading3_1">
                                     <div class="mb-0 text_left header_text" data-toggle="collapse" data-target="#collapse3_1" aria-expanded="true" aria-controls="collapse3_1">
@@ -1151,15 +1151,18 @@
     <script src='js/main.js'></script>
 	
 	<script>
+	  $( ".accordion" ).append("<div class='card'><div class='card-header'></div><div> </div></div>");
 	  $( function() {
 		$( ".accordion" ).accordion({
 		  header: ".card-header",
 		  heightStyle: "content",
-		  active: 0
+		  active: -1
 		});
 	  } );
 	  alert('heightStyle: "content"');
 	</script>
+
+
 
 </body>
 
