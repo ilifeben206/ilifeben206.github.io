@@ -29,13 +29,7 @@
     <script src="js/jquery-ui.js"></script>
     <!-- 彈跳視窗 -->
 
-    <script>
-	  $( function() {
-		$( ".accordion" ).accordion({
-		  header: ".card-header"
-		});
-	  } );
-	</script>
+    
 </head>
 <noscript>您的瀏覽器不支援JavaScript，請更換支援 JavaScript 的瀏覽器。</noscript>
 
@@ -1155,6 +1149,15 @@
         </div>
     </footer>
     <script src='js/main.js'></script>
+	
+	<script>
+	  $( function() {
+		$( ".accordion" ).accordion({
+		  header: ".card-header",
+		  heightStyle: "fill"
+		});
+	  } );
+	</script>
 
 </body>
 
